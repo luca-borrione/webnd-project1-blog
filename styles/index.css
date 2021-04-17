@@ -1,0 +1,65 @@
+@import '_layout.css';
+
+/* Mobile First */
+#blog {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    100px
+    50px
+    auto
+    50px;
+  border: 2px solid aqua;
+  grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+
+#blog > .box {
+  border: 1px solid red;
+  background: #f8fa9d;
+}
+
+#blog > header {
+  grid-area: header;
+}
+
+#blog > nav {
+  grid-area: nav;
+  overflow: auto;
+}
+
+#blog > nav.sidebar {
+  display: block;
+}
+
+#blog > nav.menu {
+  display: none;
+}
+
+#blog > main {
+  display: box;
+  grid-area: main;
+  overflow: auto;
+}
+
+#blog > footer {
+  grid-area: footer;
+}
+
+/* If Screen Is Wide Enough */
+@media (min-width: 1500px) {
+  /* #blog {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+      'hd hd hd hd hd hd hd hd'
+      'sd sd main main main main main main'
+      'ft ft ft ft ft ft ft ft';
+    border: 2px solid red;
+  } */
+}
