@@ -1,7 +1,7 @@
 @import '_layout.css';
 
 /* Mobile First */
-#blog {
+main.blog {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -14,42 +14,41 @@
   grid-template-areas:
     'header'
     'nav'
-    'main'
+    'posts'
     'footer';
 }
 
-#blog > .box {
+main.blog > .box {
   border: 1px solid red;
   background: #f8fa9d;
 }
 
-#blog > header {
+main.blog > header {
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#blog > nav {
+main.blog > nav {
   grid-area: nav;
   overflow: auto;
 }
 
-#blog > nav.sidebar {
+main.blog > nav.sidebar {
   display: block;
 }
 
-#blog > nav.menu {
+main.blog > nav.menu {
   display: none;
 }
 
-#blog > main {
-  display: box;
-  grid-area: main;
+main.blog > section.posts {
+  grid-area: posts;
   overflow: auto;
 }
 
-#blog > footer {
+main.blog > footer {
   grid-area: footer;
 }
 
