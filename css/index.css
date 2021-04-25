@@ -1,67 +1,18 @@
 @import '_layout.css';
+@import '_nav.css';
 
-/* Mobile First */
-main.blog {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:
-    100px
-    50px
-    auto
-    50px;
-  border: 2px solid aqua;
-  grid-template-areas:
-    'header'
-    'nav'
-    'posts'
-    'footer';
-}
-
-main.blog > .box {
-  border: 1px solid red;
-  background: #f8fa9d;
-}
-
-main.blog > header {
+header {
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main.blog > nav {
-  grid-area: nav;
-  overflow: auto;
-}
-
-main.blog > nav.sidebar {
-  display: block;
-}
-
-main.blog > nav.menu {
-  display: none;
-}
-
-main.blog > section.posts {
+section.posts {
   grid-area: posts;
   overflow: auto;
 }
 
-main.blog > footer {
+footer {
   grid-area: footer;
-}
-
-/* If Screen Is Wide Enough */
-@media (min-width: 1500px) {
-  /* #blog {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
-    grid-template-areas:
-      'hd hd hd hd hd hd hd hd'
-      'sd sd main main main main main main'
-      'ft ft ft ft ft ft ft ft';
-    border: 2px solid red;
-  } */
 }

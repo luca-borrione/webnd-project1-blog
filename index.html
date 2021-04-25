@@ -15,23 +15,41 @@
   </head>
   <body>
     <aside class="ui sidebar inverted vertical menu">
-      <a class="item">1</a>
-      <a class="item">2</a>
-      <a class="item">3</a>
+      <a class="item active">Style</a>
+      <a class="item">Design</a>
+      <a class="item">Food</a>
+      <a class="item">Travel</a>
+      <a class="item">Relationships</a>
+      <a class="item">Shop</a>
     </aside>
     <main class="blog dimmed pusher">
-      <header class="box">
+      <header class="blog-box">
         <h1>A Cup Of Lu</h1>
       </header>
-      <nav class="box sidebar">
-        <button class="ui primary teal small compact button">
+      <nav class="blog-box menu">
+        <button class="ui primary teal small compact button sidebar-menu">
           <i class="icon bars"></i>
           <span>Menu</span>
         </button>
+        <button class="ui teal compact button">Style</button>
+        <button class="ui teal compact button">Design</button>
+        <button class="ui teal compact button">Food</button>
+        <button class="ui teal compact button">Travel</button>
+        <button class="ui teal compact button">Relationships</button>
+        <button class="ui teal compact button">Shop</button>
+        <button class="circular ui teal icon button search compact">
+          <i class="icon search"></i>
+        </button>
+        <div class="ui search">
+          <div class="ui icon input">
+            <input class="prompt" type="text" placeholder="What are you looking for?">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
       </nav>
-      <nav class="box menu">NAV MENU</nav>
-      <section class="box posts">MAIN</section>
-      <footer class="box">FOOTER</footer>
+      <section class="blog-box posts">POSTS</section>
+      <footer class="blog-box">FOOTER</footer>
     </main>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
