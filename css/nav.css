@@ -1,0 +1,95 @@
+/* Mobile First */
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+nav > .button.sidebar-menu {
+  display: block;
+}
+
+nav > .button:not(.sidebar-menu) {
+  display: none;
+}
+
+nav > div.ui.search {
+  display: block;
+  font-size: 0.85em;
+  margin-left: auto;
+}
+
+nav > div.ui.search > .icon.input {
+  width: 15em;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width: 600px) {
+  nav > .button.sidebar-menu {
+    display: none;
+  }
+
+  nav > .button {
+    height: fit-content;
+  }
+
+  nav > .button:not(.sidebar-menu),
+  nav > div {
+    display: block;
+  }
+
+  nav > .button:not(.circular) {
+    flex-grow: 1;
+  }
+
+  nav > button.search {
+    display: block;
+  }
+
+  nav > div.ui.search {
+    display: none;
+    position: absolute;
+    right: 55px;
+  }
+
+  nav > div.ui.search > .icon.input {
+    width: 20em;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 961px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav > .ui.compact.button {
+    padding: 0.8em 1.5em 0.8em; /* removing compact padding */
+  }
+
+  nav > .ui.compact.icon.button {
+    padding: 0.8em 0.8em 0.8em; /* removing compact padding */
+  }
+
+  nav > .button:not(.circular) {
+    flex-grow: 0;
+  }
+
+  nav > .button.search {
+    display: none;
+  }
+
+  nav > div.ui.search {
+    display: block !important;
+    position: relative;
+    right: initial;
+  }
+
+  nav > div.ui.search > .icon.input {
+    width: 25em;
+  }
+}

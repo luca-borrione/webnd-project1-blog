@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.7.0",
+    "gulp": "^4.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0"
+  },
+  "dependencies": {
+    "fomantic-ui": "^2.8.7"
+  },
+  "homepage": "https://luca-borrione.github.io/webnd-project1-blog/"
+}
