@@ -38,7 +38,7 @@ attr-req-value: true
 attr-new-line: false
 attr-validate: true
 id-no-dup: true
-id-class-no-ad: true
+id-class-no-ad: false
 id-class-style: dash
 class-no-dup: true
 class-style: false

@@ -1,12 +1,9 @@
 @import '_layout.css';
 @import '_header.css';
 @import '_nav.css';
+@import '_footer.css';
 
 section.posts {
   grid-area: posts;
   overflow: auto;
-}
-
-footer {
-  grid-area: footer;
 }

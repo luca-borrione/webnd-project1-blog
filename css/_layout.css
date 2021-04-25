@@ -26,6 +26,12 @@ main.blog {
   background-color: #f8fa9d;
 }
 
+.vr {
+  border-left: 0.2em solid black;
+  height: 1em;
+  margin: 0.2em;
+}
+
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width: 600px) {
   main.blog {
@@ -34,7 +40,7 @@ main.blog {
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width: 801px) {
+@media (min-width: 961px) {
   main.blog {
     border-color: pink;
   }
