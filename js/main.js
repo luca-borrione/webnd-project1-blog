@@ -13,7 +13,10 @@ $('nav > .search.button').click(function () {
   navSearchButton.blur();
 });
 
-$(window).on('orientationchange', function () {
+function resetSearchField() {
   navSearchField.css('display', '');
   navSearchIcon.removeClass('x active').addClass('search');
-});
+}
+
+$(window).resize(resetSearchField).resize(); //trigger the resize event on page load.
+$(window).on('orientationchange', resetSearchField);
