@@ -1,12 +1,6 @@
 @import '_layout.css';
+@import '_header.css';
 @import '_nav.css';
-
-header {
-  grid-area: header;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 section.posts {
   grid-area: posts;

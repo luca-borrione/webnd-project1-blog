@@ -23,7 +23,7 @@ main.blog {
 
 .blog-box {
   border: 1px solid red;
-  background: #f8fa9d;
+  background-color: #f8fa9d;
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
