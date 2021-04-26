@@ -20,3 +20,19 @@ function resetSearchField() {
 
 $(window).resize(resetSearchField).resize(); //trigger the resize event on page load.
 $(window).on('orientationchange', resetSearchField);
+
+$("section.shoulder > aside.widget.newsletter > input[type='text']")
+  .focus(function () {
+    $(this).attr('placeholder', 'Enter Your Email');
+  })
+  .blur(function () {
+    $(this).attr('placeholder', 'Join Our Newsletter');
+  });
+
+$('section.shoulder > aside.widget.popular > .more').click(function (e) {
+  $(
+    'section.shoulder > aside.widget.popular > ol > li:nth-child(n + 6)'
+  ).show();
+  $(this).hide();
+  e.preventDefault();
+});

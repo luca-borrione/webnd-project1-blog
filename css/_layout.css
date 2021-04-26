@@ -1,35 +1,30 @@
 body {
   margin: 0;
-  background-color: peachpuff;
-}
-
-/* Mobile First */
-main.blog {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:
-    100px
-    50px
-    auto
-    50px;
-  border: 2px solid aqua;
-  grid-template-areas:
-    'header'
-    'nav'
-    'posts'
-    'footer';
+  /* background-color: peachpuff; */
+  background-color: #eef8f7;
 }
 
 .blog-box {
   border: 1px solid red;
-  background-color: #f8fa9d;
+  /* background-color: #f8fa9d; */
 }
 
 .vr {
   border-left: 0.2em solid black;
   height: 1em;
   margin: 0.2em;
+}
+
+input:focus {
+  border: 1px solid #00b5ad !important;
+}
+
+input:focus-visible {
+  outline: 0 !important;
+}
+
+input {
+  font-family: Karla, sans-serif !important;
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */

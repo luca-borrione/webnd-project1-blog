@@ -1,9 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400|Cormorant+Garamond:400|Prata');
+
 @import '_layout.css';
 @import '_header.css';
 @import '_nav.css';
+@import '_shoulder.css';
 @import '_footer.css';
+
+/* Mobile First */
+main.blog {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows:
+    100px
+    50px
+    auto
+    50px;
+  border: 2px solid aqua;
+  grid-template-areas:
+    'header header'
+    'nav nav'
+    'posts posts'
+    'footer footer';
+}
 
 section.posts {
   grid-area: posts;
-  overflow: auto;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width: 600px) {
+  main.blog {
+    grid-template-columns: 60% auto;
+    grid-template-areas:
+      'header header'
+      'nav nav'
+      'posts shoulder'
+      'footer footer';
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 961px) {
+  main.blog {
+    grid-template-columns: 66% auto;
+  }
 }

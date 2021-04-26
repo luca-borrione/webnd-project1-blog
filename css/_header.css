@@ -1,3 +1,4 @@
+/* Mobile First */
 header {
   grid-area: header;
   display: flex;

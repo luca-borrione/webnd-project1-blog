@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla%3A400%2C400italic%2C700%2C700italic%7COpen+Sans%3A400italic%2C700italic%2C700%2C400&amp;ver=5.7.1');
-
+/* Mobile First */
 footer {
   grid-area: footer;
   display: flex;
