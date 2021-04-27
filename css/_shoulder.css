@@ -1,3 +1,4 @@
+/* Mobile First */
 section.shoulder {
   grid-area: shoulder;
   display: none;
@@ -8,7 +9,6 @@ section.shoulder * {
 }
 
 section.shoulder > aside.widget {
-  /* clear: both; */
   margin: 0 0 26px;
   padding: 0 0 20px;
   background: rgba(255, 255, 255, 0.85);

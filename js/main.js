@@ -36,3 +36,21 @@ $('section.shoulder > aside.widget.popular > .more').click(function (e) {
   $(this).hide();
   e.preventDefault();
 });
+
+$('section.posts > article').each(function () {
+  $(this).hover(
+    function () {
+      $(this).css('border-color', '#00b5ad');
+      $(this).find('.title').css('color', '#00b5ad');
+    },
+    function () {
+      $(this).css('border-color', '#eef8f7');
+      $(this).find('.title').css('color', '#333');
+    }
+  );
+
+  const img = $(this).find('img');
+  const src = img.attr('src');
+  img.css('background-image', `url(${src})`);
+  img.attr('src', 'images/articles/placeholder.png');
+});

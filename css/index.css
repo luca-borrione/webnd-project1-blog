@@ -3,6 +3,7 @@
 @import '_layout.css';
 @import '_header.css';
 @import '_nav.css';
+@import '_posts.css';
 @import '_shoulder.css';
 @import '_footer.css';
 
@@ -23,10 +24,6 @@ main.blog {
     'footer footer';
 }
 
-section.posts {
-  grid-area: posts;
-}
-
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width: 600px) {
   main.blog {
@@ -43,5 +40,18 @@ section.posts {
 @media (min-width: 961px) {
   main.blog {
     grid-template-columns: 66% auto;
+  }
+
+  section.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    align-items: self-start;
+  }
+
+  section.posts article {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
