@@ -41,17 +41,4 @@ main.blog {
   main.blog {
     grid-template-columns: 66% auto;
   }
-
-  section.posts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-    align-items: self-start;
-  }
-
-  section.posts article {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }

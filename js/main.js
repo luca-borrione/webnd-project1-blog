@@ -37,7 +37,9 @@ $('section.shoulder > aside.widget.popular > .more').click(function (e) {
   e.preventDefault();
 });
 
-$('section.posts > article').each(function () {
+$(
+  'section.posts > article, section.shoulder > aside.widget.series-module'
+).each(function () {
   $(this).hover(
     function () {
       $(this).css('border-color', '#00b5ad');
@@ -48,9 +50,11 @@ $('section.posts > article').each(function () {
       $(this).find('.title').css('color', '#333');
     }
   );
+});
 
+$('section.shoulder > aside.widget, section.posts > article').each(function () {
   const img = $(this).find('img');
   const src = img.attr('src');
   img.css('background-image', `url(${src})`);
-  img.attr('src', 'images/articles/placeholder.png');
+  img.attr('src', 'images/placeholder.png');
 });
