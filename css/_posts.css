@@ -6,27 +6,32 @@ section.posts {
   align-items: center;
 }
 
-section.posts article {
+section.posts article,
+section.posts aside.comments {
+  width: 85%;
+  background: #fff;
+}
+
+section.posts article.preview {
+  margin-bottom: 3.5rem;
+  border: 0.01rem solid #eef8f7;
+}
+
+section.posts aside.comments1 {
   width: 85%;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 50px;
-  font-size: 14px;
-  text-align: left;
   background: #fff;
-  overflow: hidden;
-  border: 1px solid #eef8f7;
-}
-
-section.posts > article * {
-  color: #333;
-  font-family: Karla, sans-serif;
 }
 
 section.posts > article figure {
   width: 100%;
   margin: 0;
   height: 17em;
+}
+
+section.posts > article:not(.preview) figure {
+  margin-top: 1em;
 }
 
 section.posts > article figure > img {
@@ -37,51 +42,170 @@ section.posts > article figure > img {
   background-position: 0% 0%;
 }
 
-section.posts > article .category {
-  margin: 0.5em;
+section.posts > article header > * {
+  margin: 0.25em 0.5em;
+}
+
+section.posts > article header .category {
   text-transform: uppercase;
-  margin: 0.25em 0.5em;
 }
 
-section.posts > article .title {
-  font-family: Cormorant Garamond, serif;
-  margin: 0.25em 0.5em;
+section.posts > article header .title {
+  font-family: 'Cormorant Garamond', serif;
 }
 
-section.posts > article .synopsis {
+section.posts > article .content {
   padding: 0.5em;
   text-align: justify;
   margin: 0;
+  font-family: Nunito, sans-serif;
 }
 
-section.posts > article .bottom-line {
+section.posts > article .content * {
+  font-family: Nunito, sans-serif;
+}
+
+section.posts > article footer,
+section.posts > aside.comments .comment footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0.5em;
 }
 
-section.posts > article .bottom-line > span {
-  margin: 0.5em;
+section.posts > article:not(.preview) footer {
+  margin-top: 2rem;
+  border-top: 0.01rem solid #00b5ad;
+  border-bottom: 0.01rem solid #00b5ad;
+}
+
+section.posts .comments-link {
+  font-family: 'Cormorant Garamond';
+  font-size: 1.43rem;
+  line-height: 2.5rem;
+}
+
+section.posts .comments-number {
+  font-family: 'Prata';
+  font-size: 2.5rem;
+  color: #00b5ad;
+}
+
+section.posts footer > * {
   color: #999;
 }
 
-section.posts > article .bottom-line > span.date {
+section.posts footer > .date,
+section.posts footer > .comment-reply {
   text-transform: uppercase;
+}
+
+section.posts > aside.comments {
+  padding: 1.9rem 2.3rem 2.3rem 1.2rem;
+}
+
+section.posts > aside.comments > .comments-header {
+  padding-bottom: 1.4rem;
+  border-bottom: 0.01rem solid #00b5ad;
+}
+
+section.posts > aside.comments > .comments-list {
+  width: 100%;
+  padding-inline-start: 0;
+  list-style-type: none;
+  margin: 2rem 0 0 0;
+}
+
+section.posts > aside.comments > .comments-list > li.comment {
+  border-bottom: 0.01rem solid #00b5ad;
+  margin-bottom: 2rem;
+}
+
+section.posts > aside.comments .comment .comment-author {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+section.posts > aside.comments .comment .comment-content {
+  margin: 0.5rem 0 0.5rem 0;
+  font-style: italic;
+}
+
+section.posts > aside.comments .comment footer {
+  padding-bottom: 1rem;
+}
+
+section.posts > aside.comments .comment footer .comment-reply-link {
+  font-size: 0.9rem;
+}
+
+section.posts > aside.comments > footer > form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+section.posts > aside.comments > footer > form > label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+section.posts > aside.comments > footer > form > textarea,
+section.posts > aside.comments > footer > form > input {
+  background: #eef8f7;
+  width: 100%;
+  padding: 0.3rem 0.7rem;
+}
+
+section.posts > aside.comments > footer > form > textarea {
+  resize: vertical;
+  min-height: 10.5rem;
+}
+
+section.posts > aside.comments > footer > form > input[type='submit'] {
+  cursor: pointer;
+  border: 0.01rem solid #00b5ad;
+  background-color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #00b5ad;
+  text-transform: lowercase;
+  align-self: flex-end;
+  width: auto;
+  margin-top: 0.8rem;
+  padding: 0.75rem 2rem;
+}
+
+section.posts > aside.comments > footer > form > input[type='submit']:hover {
+  background-color: #00b5ad;
+  color: white;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 961px) {
-  section.posts {
+  section.posts.preview {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
     align-items: self-start;
   }
 
-  section.posts article {
-    width: 90%;
+  section.posts article,
+  section.posts > aside.comments {
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  section.posts.preview article {
+    width: 90%;
   }
 }

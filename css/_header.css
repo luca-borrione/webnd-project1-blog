@@ -1,5 +1,5 @@
 /* Mobile First */
-header {
+main.blog > header {
   grid-area: header;
   display: flex;
   align-items: center;

@@ -38,7 +38,7 @@ $('section.shoulder > aside.widget.popular > .more').click(function (e) {
 });
 
 $(
-  'section.posts > article, section.shoulder > aside.widget.series-module'
+  'section.posts.preview > article, section.shoulder > aside.widget.related-post'
 ).each(function () {
   $(this).hover(
     function () {

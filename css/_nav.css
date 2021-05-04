@@ -83,7 +83,7 @@ nav > div.ui.search > .icon.input {
   }
 
   nav > div.ui.search {
-    display: block !important;
+    display: block;
     position: relative;
     right: initial;
   }

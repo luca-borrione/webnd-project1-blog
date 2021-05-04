@@ -12,12 +12,12 @@ section.shoulder > aside.widget {
   margin: 0 0 26px;
   padding: 0 0 20px;
   background: rgba(255, 255, 255, 0.85);
-  border-top: 1px solid #00b5ad;
-  font-family: Cormorant Garamond, serif;
+  border-top: 0.01rem solid #00b5ad;
+  font-family: 'Cormorant Garamond', serif;
 }
 
-section.shoulder > aside.widget.series-module {
-  border: 1px solid #eef8f7;
+section.shoulder > aside.widget.related-post {
+  border: 0.01rem solid #eef8f7;
   border-top-color: #00b5ad !important;
 }
 
@@ -29,27 +29,27 @@ section.shoulder > aside.widget > a {
 }
 
 section.shoulder > aside.widget .title,
-section.shoulder > aside.widget.series-module .category {
-  font-family: Cormorant Garamond, serif;
+section.shoulder > aside.widget.related-post .category {
+  font-family: 'Cormorant Garamond', serif;
   padding: 1em 0 0.5em;
 }
 
 section.shoulder > aside.widget .primary.title,
-section.shoulder > aside.widget.series-module .category {
+section.shoulder > aside.widget.related-post .category {
   padding: 0;
   text-transform: capitalize;
   margin: 30px 0 0;
+  font-weight: 500;
 }
 
 section.shoulder > aside.widget .secondary.title,
-section.shoulder > aside.widget.series-module .title {
-  font-size: 1.2em;
+section.shoulder > aside.widget.related-post .title {
   font-family: Karla, sans-serif;
   padding: 0;
   margin: 0.5em 1em;
 }
 
-section.shoulder > aside.widget.series-module .title {
+section.shoulder > aside.widget.related-post .title {
   text-transform: uppercase;
   word-break: break-word;
 }
@@ -69,7 +69,7 @@ section.shoulder > aside.widget.newsletter > input[type='submit'] {
   position: absolute;
   right: 4%;
   margin-top: 4.65em;
-  border: none !important;
+  border: none;
   background: 0 0;
   cursor: pointer;
   font-size: 1.15em;
@@ -139,6 +139,8 @@ section.shoulder > aside.widget.popular > .more {
 section.shoulder > aside.widget.popular > .more * {
   color: #00b5ad;
   font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
