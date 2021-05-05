@@ -27,3 +27,14 @@ Regarding the extra requirements, the following has been implemented:
 - I used _Custom Text_ where possible
 - I created a couple of related articles in the blog post
 - I implemented a form to send comments, and a form to subscribe to the newsletter
+
+As a personal extra I used JQuery, which is provided by Semantic UI, to make the webpage slightly more interactive.
+
+## Tech Stack:
+
+- HTML5 semantic tags
+- CSS Flexbox and CSS Grid
+- JQuery
+- Semantic UI
+- Node
+- GIT
