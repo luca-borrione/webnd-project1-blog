@@ -1,7 +1,5 @@
 * {
-  color: #333;
   font-family: Karla, sans-serif;
-  font-size: 14px;
 }
 
 h1,
@@ -18,13 +16,10 @@ a:hover {
   color: #00b5ad;
 }
 
-a * {
-  color: #333;
-}
-
 body {
   margin: 0;
   background-color: #eef8f7;
+  color: #333;
 }
 
 .vr {
@@ -41,7 +36,7 @@ textarea {
 .ui.input > input:focus,
 input:focus,
 textarea:focus {
-  border-color: #00b5ad;
+  border-color: #00b5ad !important;
 }
 
 input:focus-visible,

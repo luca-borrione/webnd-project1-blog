@@ -51,8 +51,6 @@ nav > div.ui.search > .icon.input {
 
   nav > div.ui.search {
     display: none;
-    position: absolute;
-    right: 55px;
   }
 
   nav > div.ui.search > .icon.input {

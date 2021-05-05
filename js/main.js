@@ -21,7 +21,7 @@ function resetSearchField() {
 $(window).resize(resetSearchField).resize(); //trigger the resize event on page load.
 $(window).on('orientationchange', resetSearchField);
 
-$("section.shoulder > aside.widget.newsletter > input[type='text']")
+$("section.shoulder > aside.widget.newsletter input[type='text']")
   .focus(function () {
     $(this).attr('placeholder', 'Enter Your Email');
   })
