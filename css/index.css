@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400|Cormorant+Garamond:400,500|Prata:400|Nunito:400');
 
-@import '_layout.css';
-@import '_header.css';
-@import '_nav.css';
-@import '_posts.css';
-@import '_shoulder.css';
-@import '_footer.css';
+@import 'layout.css';
+@import 'header.css';
+@import 'nav.css';
+@import 'posts.css';
+@import 'shoulder.css';
+@import 'footer.css';
 
 /* Mobile First */
 main.blog {
