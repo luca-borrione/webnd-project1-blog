@@ -1,12 +1,8 @@
 # Personal Blog Website
 
-> ---
->
 > NOTE
 >
 > This project has been published to my personal github pages and can be viewed visiting<br /> [https://luca-borrione.github.io/webnd-project1-blog/](https://luca-borrione.github.io/webnd-project1-blog/)
->
-> ---
 
 <br/>
 <br/>
